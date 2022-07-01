@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+	<h1>Aula 3 Java Script</h1>
+            </div>
+            <div class="col">
+    <h1>Abre a Porta</h1>
+    <img class="img-fluid" src="fechado.jpg" id="porta"onmousemove="abreporta()" onmouseout="fechaporta()" onclick="desbloqueado()">       	
+	<h1>Clique para entrar</h1>	
+	
+	        </div>
+	        <div class="col">
+    <h2>Tenha um bom dia!</h2>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript">	
+		function abreporta(){
+			document.getElementById("porta"). src="aberto.jpg";
+		}
+		function fechaporta(){
+			document.getElementById("porta"). src="fechado.jpg";
+		}
+		function desbloqueado(){
+			document.getElementById("porta"). src="desbloqueado.jpg";
+		}
+</script>
+</body>
+</html>
